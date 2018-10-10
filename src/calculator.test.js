@@ -12,3 +12,8 @@ it("should return sum of two given numbers", () => {
     expect(add("1,2")).toBe(3);
 });
 
+it("should return sum of two given numbers", () => {
+    expect(add("1,2")).toBe(3);
+});
+
+
