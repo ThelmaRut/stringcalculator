@@ -5,7 +5,7 @@ function add (numbers){
     if(numbers.includes(","))
     {
         var numberArray = numbers.split(",");
-        return sum(numberArray);
+        return sum(numberArray, ',');
     }
     else
     return parseInt(numbers);
