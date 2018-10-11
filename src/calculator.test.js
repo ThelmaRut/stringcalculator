@@ -19,3 +19,7 @@ it("should summarize multiple numbers", () => {
 it("should handle an unknown number of arguments", () => {
     expect(add("1,2,3,4,5,6,7,8,9,10")).toBe(55);
 })
+
+it("should be able to handle new lines between numbers", () => {
+    expect(add("1\n2,3")).toBe(6);
+})
