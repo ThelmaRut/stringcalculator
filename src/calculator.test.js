@@ -21,5 +21,11 @@ it("should handle an unknown number of arguments", () => {
 })
 
 it("should be able to handle new lines between numbers", () => {
-    expect(add("1\n2,3")).toBe(6);
+    expect(add("1\n2,3,2")).toBe(8);
 })
+
+it("should be able to throw an error and print out a negative number", () => {
+    expect(add('2,-8,-9')).toBe("Negatives not allowed : -8,-9");
+});
+
+
