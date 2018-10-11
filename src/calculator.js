@@ -32,21 +32,25 @@ function sum(number_Array)
     var negativeArray = [];
     for(var i=0 ; i < number_Array.length ; i++)
     {
-        if(number_Array[i] < 0 )
-        {
-            negativeArray.push(number_Array[i]);
-        }
-        if(number_Array[i] > 1000)
+        var n = parseInt(number_Array[i]);
+        if(n > 1000 || isNaN(n))
             {
-            number_Array[i] = 0;
+            console.log(n[i]);
+            n = 0;
+            
             }
-        total += parseInt(number_Array[i]);
+        total += parseInt(n);
+        if(n < 0 )
+        {
+            negativeArray.push(n);
         }
+        }
+
         if(negativeArray.length != 0)
         {
             negativeNumbers(negativeArray);
         }
-
+        
     return total;
 }
 
