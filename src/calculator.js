@@ -36,15 +36,17 @@ function sum(number_Array)
         {
             negativeArray.push(number_Array[i]);
         }
-
+        if(number_Array[i] > 1000)
+            {
+            number_Array[i] = 0;
+            }
         total += parseInt(number_Array[i]);
-
-        
-    }
-    if(negativeArray.length != 0)
+        }
+        if(negativeArray.length != 0)
         {
             negativeNumbers(negativeArray);
         }
+
     return total;
 }
 

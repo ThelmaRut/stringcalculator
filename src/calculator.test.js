@@ -28,4 +28,7 @@ it("should be able to throw an error and print out a negative number", () => {
     expect(add('2,-8,-9')).toBe("Negatives not allowed : -8,-9");
 });
 
+it("should be able to ignore numbers that are bigger than 1000", () => {
+    expect(add('5,1002')).toBe(5);
+});
 
